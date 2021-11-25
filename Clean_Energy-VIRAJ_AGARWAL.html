@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean_Energy-VIRAJ_AGARWAL</title>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Kumbh+Sans:wght@300;400&family=Nunito:wght@700&family=Yantramanav:wght@300&display=swap');
+
+        * {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+            font-family: 'Yantramanav', sans-serif;
+        }
+        body {
+            background-image: url('Images/halftone-yellow.png');
+        }
+
+
+        @media only screen and (max-width: 599px) {
+            #startup_container {
+                position: relative;
+                width: 100%;
+                height: 100vh;
+                max-width: 416px;
+                max-height: 568px;
+                min-width: 320px;
+                min-height: 550px;
+                overflow: hidden;
+                margin: 0 auto;
+            }
+                #phase_1 {
+                    position: absolute;
+                    top: 0%;
+                    left: 0%;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgb(133, 255, 255);
+                    z-index: 3;
+                    animation: Phase_1 5000ms ease 0ms forwards;
+                }
+                @keyframes Phase_1 {
+                    0%{
+                        opacity: 1;
+                    }
+                    90% {
+                        opacity: 1;
+                    }
+                    100% {
+                        opacity: 0;
+                    }
+                }
+                    #phase_1_text {
+                        font-size: 2em;
+                        text-align: center;
+                        margin-top: 8em;
+                    }
+                    #ground {
+                        width: 200%;
+                        height: 10em;
+                        left: -45%;
+                        background-color: rgb(0, 131, 0);
+                        position: absolute;
+                        bottom: -15%;
+                        border-radius: 50%;
+                        animation: Phase_1_ground 5000ms ease 0ms forwards;        
+                    }
+                    @keyframes Phase_1_ground {
+                        100% {
+                            background-color: rgb(34,78,0);
+                        }
+                    }
+                    #cloud_1 {
+                        position: absolute;
+                        left: 0%;
+                        top: 5%;
+                        width: 12em;
+                        height: auto; 
+                        animation: back_forth_1_mob 2s ease 0ms infinite forwards;
+                    }
+                    @keyframes back_forth_1_mob {
+                        50% {
+                            width: 12.5em;
+                        }
+                        100% {
+                            width: 12em;
+                        }
+                    }
+                    #cloud_2 {
+                        position: absolute;
+                        left: 39%;
+                        top: 18%;
+                        width: 12em;
+                        height: auto; 
+                        animation: back_forth_1_mob 2s ease 0ms infinite forwards;
+
+                    }
+                    #cloud_3 {
+                        display: none;
+                        position: absolute;
+                        left: 0%;
+                        top: 5%;
+                        width: 12em;
+                        height: auto; 
+                    }
+                    #cloud_4 {
+                        display: none;
+                        position: absolute;
+                        left: 39%;
+                        top: 18%;
+                        width: 12em;
+                        height: auto; 
+                    }
+                    #sun {
+                        position: absolute;
+                        right: 5%;
+                        top: 7%;
+                        width: 6em;
+                        height: auto; 
+                        animation: zoom_transform_1_mob 2s infinite ease forwards;
+                    }
+                    @keyframes zoom_transform_1_mob {
+                        50% {
+                            width: 6.5em;
+                        }
+                        100% {
+                            width: 6em;
+                        }
+                    }
+                    #tree_1 {
+                        position: absolute;
+                        left: -4%;
+                        bottom: 12%;
+                        width: 7em;
+                        height: auto;
+                        transform-origin: 50% 100%;
+                        animation: tree_fall_1_mob 5000ms linear 0ms forwards;
+                    }
+                    #tree_2 {
+                        position: absolute;
+                        left: 22%;
+                        bottom: 13%;
+                        width: 7em;
+                        height: auto;
+                    }
+                    #tree_3 {
+                        position: absolute;
+                        left: 47%;
+                        bottom: 13%;
+                        width: 7em;
+                        height: auto;
+                        transform-origin: 50% 100%;
+                        animation: tree_fall_1_mob 5000ms linear 0ms forwards;
+                    }
+                    #tree_4 {
+                        position: absolute;
+                        left: 71%;
+                        bottom: 12%;
+                        width: 7em;
+                        height: auto; 
+                        transform-origin: 50% 100%;
+                        animation: tree_fall_1_mob 5000ms linear 0ms forwards;
+
+                    }
+                    #tree_5 {
+                        display: none;
+                    }
+                    #tree_6 {
+                        display: none;
+                    }
+                    #tree_7 {
+                        display: none;
+                    }
+                    #tree_8 {
+                        display: none;
+                    }
+                    @keyframes tree_fall_1_mob {
+                        20% {
+                            transform: rotateZ(0deg);
+                        }
+                        100% {
+                            transform: rotateZ(90deg);
+                        }
+                    }
+
+
+            
+            
+                #phase_2 {
+                    opacity: 1;
+                    position: absolute;
+                    top: 0%;
+                    left: 0%;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgb(133, 255, 255);
+                    z-index: 2;
+                    animation: Phase_2 5000ms ease 4700ms forwards;
+                }
+                @keyframes Phase_2 {
+                    0%{
+                        opacity: 1;
+                    }
+                    90% {
+                        opacity: 1;
+                    }
+                    100% {
+                        opacity: 0;
+                    }
+                }
+                    #phase_2_text {
+                        font-size: 2em;
+                        text-align: center;
+                        margin-top: 8em;
+                    }
+                    #ground_phase2 {
+                        width: 200%;
+                        height: 10em;
+                        left: -45%;
+                        background-color: rgb(34,78,0);
+                        position: absolute;
+                        bottom: -15%;
+                        border-radius: 50%;
+                        animation: Phase_2_ground 5000ms ease 5000ms forwards;        
+            
+                    }
+                    @keyframes Phase_2_ground {
+                        100% {
+                            background-color: rgb(68, 25, 0);
+                        }
+                    }
+                    #cloud_1_phase2 {
+                        position: absolute;
+                        left: 0%;
+                        top: 5%;
+                        width: 12em;
+                        height: auto; 
+                        animation: back_forth_2_mob 2s ease 0ms infinite forwards;
+                    }
+                    @keyframes back_forth_2_mob {
+                        50% {
+                            width: 12.5em;
+                        }
+                        100% {
+                            width: 12em;
+                        }
+                    }
+                    #cloud_2_phase2 {
+                        display: none;
+                    }
+                    #sun_phase2 {
+                        position: absolute;
+                        right: 5%;
+                        top: 7%;
+                        width: 6em;
+                        height: auto;
+                        animation: zoom_transform_2_mob 2s infinite ease forwards;
+                    }
+                    @keyframes zoom_transform_2_mob {
+                        50% {
+                            width: 6.5em;
+                        }
+                        100% {
+                            width: 6em;
+                        }
+                    }
+                    #tree_1_phase2 {
+                        position: absolute;
+                        display: none;
+                        left: -4%;
+                        bottom: 12%;
+                        width: 7em;
+                        height: auto;
+                    }
+                    #tree_2_phase2 {
+                        position: absolute;
+                        left: 22%;
+                        bottom: 13%;
+                        width: 7em;
+                        height: auto;
+                        transform-origin: 50% 100%;
+                        animation: tree_fall_1_mob 5000ms linear 5s forwards;
+                    }
+                    @keyframes tree_fall_1_mob {
+                        20% {
+                            transform: rotateZ(0deg);
+                        }
+                        100% {
+                            transform: rotateZ(90deg);
+                        }
+                    }
+                    #tree_3_phase2 {
+                        display: none;
+                        position: absolute;
+                        left: 47%;
+                        bottom: 13%;
+                        width: 7em;
+                        height: auto;
+                    }
+                    #tree_4_phase2 {
+                        display: none;
+                        position: absolute;
+                        left: 71%;
+                        bottom: 12%;
+                        width: 7em;
+                        height: auto; 
+                    }
+                    #tree_5_phase2 {
+                        display: none;
+                    }
+                    #tree_6_phase2 {
+                        display: none;
+                    }
+                    #tree_7_phase2 {
+                        display: none;
+                    }
+                    #tree_8_phase2 {
+                        display: none;
+                    }
+                    #polluted_cloud_1_phase2 {
+                        position: absolute;
+                        left: 39%;
+                        top: 18%;
+                        width: 12em;
+                        height: auto;
+                        animation: back_forth_2_mob 2s ease 0ms infinite forwards;
+
+                    }
+                    #polluted_cloud_2_phase2 {
+                        display: none;
+                        position: absolute;
+                        left: 39%;
+                        top: 18%;
+                        width: 12em;
+                        height: auto;
+                    }
+                    #chimney_1_phase2 {
+                        position: absolute;
+                        left: -3%;
+                        top: 53%;
+                        width: 13em;
+                        height: auto;
+                    }
+                    #chimney_2_phase2 {
+                        display: none;
+                        position: absolute;
+                        left: -3%;
+                        top: 53%;
+                        width: 13em;
+                        height: auto;
+                    }
+                    #building_1_phase2{
+                        position: absolute;
+                        left: 61%;
+                        bottom: 11%;
+                        width: 10em;
+                        height: auto;
+                    }
+                    #building_2_phase2{
+                        display: none;
+                        position: absolute;
+                        left: 61%;
+                        bottom: 11%;
+                        width: 10em;
+                        height: auto;
+                    }
+                
+            
+                #phase_3 {
+                    position: absolute;
+                    top: 0%;
+                    left: 0%;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgb(133, 255, 255);
+                    z-index: 1;
+                    animation: Phase_2 5000ms ease 9400ms forwards;
+                }
+                @keyframes Phase_3 {
+                    0%{
+                        opacity: 1;
+                    }
+                    90% {
+                        opacity: 1;
+                    }
+                    100% {
+                        opacity: 0;
+                    }
+                }
+            
+                    #phase_2_text {
+                        font-size: 2em;
+                        text-align: center;
+                        margin-top: 8em;
+                    }
+                    #ground_phase3 {
+                        width: 200%;
+                        height: 10em;
+                        left: -45%;
+                        background-color: rgb(68, 25, 0);
+                        position: absolute;
+                        bottom: -15%;
+                        border-radius: 50%;
+                    }
+                    #sun_phase3 {
+                        position: absolute;
+                        right: 5%;
+                        top: 7%;
+                        width: 6em;
+                        height: auto;
+                        animation: zoom_transform_3_mob 2s infinite ease forwards;
+                    }
+                    @keyframes zoom_transform_3_mob {
+                        50% {
+                            width: 6.5em;
+                        }
+                        100% {
+                            width: 6em;
+                        }
+                    }
+                    #polluted_cloud_1_phase3 {
+                        position: absolute;
+                        left: 1%;
+                        top: 4%;
+                        width: 12em;
+                        height: auto;
+                        animation: back_forth_3_mob 2s ease 0ms infinite forwards;
+
+                    }
+                    #polluted_cloud_2_phase3 {
+                        position: absolute;
+                        left: 39%;
+                        top: 18%;
+                        width: 12em;
+                        height: auto;
+                        animation: back_forth_3_mob 2s ease 0ms infinite forwards;
+
+                    }
+                    #polluted_cloud_3_phase3 {
+                        display: none;
+                        position: absolute;
+                        left: 1%;
+                        top: 4%;
+                        width: 12em;
+                        height: auto;
+                    }
+                    #polluted_cloud_4_phase3 {
+                        display: none;
+                        position: absolute;
+                        left: 1%;
+                        top: 4%;
+                        width: 12em;
+                        height: auto;
+                    }
+                    @keyframes back_forth_3_mob {
+                        50% {
+                            width: 12.5em;
+                        }
+                        100% {
+                            width: 12em;
+                        }
+                    }
+                    #chimney_1_phase3 {
+                        position: absolute;
+                        left: -3%;
+                        top: 53%;
+                        width: 13em;
+                        height: auto;
+                    }
+                    #chimney_2_phase3 {
+                        position: absolute;
+                        left: 16%;
+                        top: 52%;
+                        width: 13em;
+                        height: auto;
+                    }
+                    #chimney_3_phase3 {
+                        display: none;
+                        position: absolute;
+                        left: 16%;
+                        top: 52%;
+                        width: 13em;
+                        height: auto;
+                    }
+                    #chimney_4_phase3 {
+                        display: none;
+                        position: absolute;
+                        left: 16%;
+                        top: 52%;
+                        width: 13em;
+                        height: auto;
+                    }
+                    #building_1_phase3{
+                        position: absolute;
+                        left: 61%;
+                        bottom: 11%;
+                        width: 10em;
+                        height: auto;
+                    }
+                    #building_2_phase3 {
+                        position: absolute;
+                        left: 44%;
+                        bottom: 11%;
+                        width: 8em;
+                        height: auto;
+                    }
+                    #building_3_phase3{
+                        display: none;
+                        position: absolute;
+                        left: 61%;
+                        bottom: 11%;
+                        width: 10em;
+                        height: auto;
+                    }
+                    #building_4_phase3 {
+                        display: none;
+                        position: absolute;
+                        left: 44%;
+                        bottom: 11%;
+                        width: 8em;
+                        height: auto;
+                    }
+            
+                #main_start {
+                    background-image: url('Images/pool_table.png');
+                    position: absolute;
+                    text-align: center;
+                    top: 0%;
+                    left: 0%;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    color: #ddb901;
+                    background-color: white;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 3em;
+                }
+            
+            
+            #section_1 {
+                display: flex;
+                flex-wrap: wrap;
+                column-gap: 2vw;
+                row-gap: 2vw;
+                align-items: center;
+                justify-content: center;
+                margin-top: 2em;
+            }
+                #image_1 {
+                    perspective: 500px;
+                    width: 12.5em;
+                    height: 12.5em;
+                    transform-style: preserve-3d;
+                    animation: big_and_small 10s ease 0s infinite forwards;
+                    color: yellow;
+                }
+                    #image_1:hover {
+                        animation-play-state: paused;
+                    }
+                #image_2 {
+                    perspective: 500px;
+                    width: 12.5em;
+                    height: 12.5em;
+                    transform-style: preserve-3d;
+                    animation: big_and_small 10s ease 0s infinite forwards;
+                    color: yellow;
+                }
+                    #image_2:hover {
+                        animation-play-state: paused;
+                    }
+                #image_3 {
+                    perspective: 500px;
+                    width: 12.5em;
+                    height: 12.5em;
+                    transform-style: preserve-3d;
+                    animation: big_and_small 10s ease 0s infinite forwards;
+                    color: yellow;
+                }
+                    #image_3:hover {
+                        animation-play-state: paused;
+                    }
+                @keyframes big_and_small {
+                    50% {
+                        transform: rotateY(180deg);
+                    }
+                }
+                    #middle_container_1 {
+                        position: absolute;
+                        width: 12.5em;
+                        height: 12.5em;
+                        background-image: url('https://images.unsplash.com/photo-1615325240547-4ab8f5c188c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80');
+                        background-size: 100% 100%;
+                        border-radius: 1em;
+                    }
+                    #middle_container_2 {
+                        position: absolute;
+                        width: 12.5em;
+                        height: 12.5em;
+                        background-image: url('https://images.unsplash.com/photo-1619670710451-ee9d204dac26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+                        background-size: 100% 100%;
+                        border-radius: 1em;
+                    }
+                    #middle_container_3 {
+                        position: absolute;
+                        width: 12.5em;
+                        height: 12.5em;
+                        background-image: url('https://images.unsplash.com/photo-1538309639218-3432f79e0894?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+                        background-size: 100% 100%;
+                        border-radius: 1em;
+                    }
+                    .front_container {
+                        position: absolute;
+                        width: 100%;
+                        height: 50%;
+                        text-align: center;
+                        padding: 1ch;
+                        top: 0%;
+                        transform: translateZ(3px);
+                        background: linear-gradient(180deg, black, rgba(0, 0, 0, 0.747) ,rgba(0, 0, 0, 0.582) , transparent);
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        border-radius: 1em;
+                    }
+                    .back_container {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        bottom: 0%;
+                        transform: translateZ(-3px) rotateY(180deg);
+                        background: linear-gradient(0deg, black, rgba(0, 0, 0, 0.747) ,rgba(0, 0, 0, 0.514));
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 1em;
+            
+                    }
+            
+            
+            
+            #special_button {
+                width: 15em;
+                max-width: 90vw;
+                padding: 0.1em;
+                height: 5em;
+                background-color: darkslategrey;
+                color: white;
+                flex-wrap: wrap;
+                font-size: 2em;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 2em auto;
+                text-align: center;
+            }
+                #special_button:hover {
+                    background-image: url('https://images.unsplash.com/photo-1542378135-815e52392963?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80');
+                    background-size: 100% 100%;
+                    animation: zoom 2s ease infinite forwards;
+                    background-position: center;
+                }
+                @keyframes zoom {
+                    0% {
+                        background-size: 100% 100%; 
+                        }
+                    50% {
+                        background-size: 105% 105%; 
+                        }
+                    100% {
+                        background-size: 100% 100%;
+                            }
+                }
+                #special_button:active {
+                    transform: scale(0.98);
+                    background-image: url('https://images.unsplash.com/photo-1542378135-815e52392963?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80');
+                    background-size: 100% 100%;
+                    animation: zoom 2s ease infinite forwards;
+                    background-position: center;
+                }
+        }
+        @media only screen and (min-width: 600px) {
+            #startup_container {
+                position: relative;
+                width: 100%;
+                height: 100vh;
+                max-height: 568px;
+                min-width: 320px;
+                min-height: 550px;
+                overflow: hidden;
+                margin: 0 auto;
+            }
+                #phase_1 {
+                    position: absolute;
+                    top: 0%;
+                    left: 0%;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgb(133, 255, 255);
+                    z-index: 6;
+                    animation: Phase_1 5000ms ease 0ms forwards;
+                }
+                @keyframes Phase_1 {
+                    0%{
+                        opacity: 1;
+                    }
+                    90% {
+                        opacity: 1;
+                    }
+                    100% {
+                        opacity: 0;
+                    }
+                }
+                    #phase_1_text {
+                        position: absolute;
+                        font-size: 2em;
+                        text-align: center;
+                        margin-top: 8em;
+                        z-index: 15;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background-color: rgba(255, 255, 255, 0.397);
+                    }
+                    #ground {
+                        width: 200%;
+                        height: 10em;
+                        left: -45%;
+                        background-color: rgb(0, 131, 0);
+                        position: absolute;
+                        bottom: -15%;
+                        border-radius: 50%;
+                        animation: Phase_1_ground 5000ms ease 0ms forwards;        
+                    }
+                    @keyframes Phase_1_ground {
+                        100% {
+                            background-color: rgb(34,78,0);
+                        }
+                    }
+                    #cloud_1 {
+                        position: absolute;
+                        left: 0%;
+                        top: 5%;
+                        width: 12em;
+                        height: auto; 
+                        animation: back_forth_1_desk 2s infinite 0s ease forwards;
+                    }
+                    @keyframes back_forth_1_desk {
+                        50% {
+                            width: 12.5em;
+                        }
+                        100% {
+                            width: 12em;
+                        }
+                    }
+                    #cloud_2 {
+                        position: absolute;
+                        left: 39%;
+                        top: 18%;
+                        width: 12em;
+                        height: auto; 
+                        animation: back_forth_1_desk 2s infinite 0s ease forwards;
+                    }
+                    #cloud_3 {
+                        position: absolute;
+                        left: 20%;
+                        top: -4%;
+                        width: 12em;
+                        height: auto; 
+                        animation: back_forth_1_desk 2s infinite 0s ease forwards;
+
+                    }
+                    #cloud_4 {
+                        position: absolute;
+                        left: 60%;
+                        top: 11%;
+                        width: 12em;
+                        height: auto;
+                        animation: back_forth_1_desk 2s infinite 0s ease forwards;
+
+                    }
+                    #sun {
+                        position: absolute;
+                        right: 5%;
+                        top: 7%;
+                        width: 6em;
+                        height: auto; 
+                        z-index: -1;
+                        animation: zoom_transform_1_desk 2s ease infinite forwards;
+                    }
+                    @keyframes zoom_transform_1_desk {
+                        50% {
+                            width: 6.5em;
+                        }
+                        100% {
+                            width: 6em;
+                        }
+                    }
+                    #tree_1 {
+                        position: absolute;
+                        left: 1%;
+                        bottom: 10%;
+                        width: 7em;
+                        height: auto;
+                        transform-origin: 50% 100%;
+                        animation: tree_fall_1_desk 5000ms linear 0ms forwards;
+                    }
+                    @keyframes tree_fall_1_desk {
+                        20% {
+                            transform: rotateZ(0deg);
+                        }
+                        100% {
+                            transform: rotateZ(90deg);
+                        }
+                    }
+                    #tree_2 {
+                        position: absolute;
+                        left: 22%;
+                        bottom: 12%;
+                        width: 7em;
+                        height: auto;
+                    }
+                    #tree_3 {
+                        position: absolute;
+                        left: 47%;
+                        bottom: 13%;
+                        width: 7em;
+                        height: auto;
+                    }
+                    #tree_4 {
+                        position: absolute;
+                        left: 71%;
+                        bottom: 12%;
+                        width: 7em;
+                        height: auto; 
+                        transform-origin: 50% 100%;
+                        animation: tree_fall_1_desk 5000ms linear 0ms forwards;
+                    }
+                    #tree_5 {
+                        position: absolute;
+                        left: 82%;
+                        bottom: 12%;
+                        width: 7em;
+                        height: auto; 
+                        transform-origin: 50% 100%;
+                        animation: tree_fall_1_desk 5000ms linear 0ms forwards;
+                    }
+                    #tree_6 {
+                        position: absolute;
+                        left: 61%;
+                        bottom: 12%;
+                        width: 7em;
+                        height: auto; 
+                    }
+                    #tree_7 {
+                        position: absolute;
+                        left: 34%;
+                        bottom: 12%;
+                        width: 7em;
+                        height: auto;
+                    }
+                    #tree_8 {
+                        position: absolute;
+                        left: 11%;
+                        bottom: 12%;
+                        width: 7em;
+                        height: auto;
+                        transform-origin: 50% 100%;
+                        animation: tree_fall_1_desk 5000ms linear 0ms forwards;
+                    }
+            
+            
+                #phase_2 {
+                    opacity: 1;
+                    position: absolute;
+                    top: 0%;
+                    left: 0%;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgb(133, 255, 255);
+                    z-index: 4;
+                    animation: Phase_2 5000ms ease 4700ms forwards;
+                }
+                @keyframes Phase_2 {
+                    0%{
+                        opacity: 1;
+                    }
+                    90% {
+                        opacity: 1;
+                    }
+                    100% {
+                        opacity: 0;
+                    }
+                }
+                    #phase_2_text {
+                        position: absolute;
+                        font-size: 2em;
+                        text-align: center;
+                        margin-top: 8em;
+                        z-index: 15;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background-color: rgba(255, 255, 255, 0.397);
+                    }
+                    #ground_phase2 {
+                        width: 200%;
+                        height: 10em;
+                        left: -45%;
+                        background-color: rgb(34,78,0);
+                        position: absolute;
+                        bottom: -15%;
+                        border-radius: 50%;
+                        animation: Phase_2_ground 5000ms ease 5000ms forwards;        
+            
+                    }
+                    @keyframes Phase_2_ground {
+                        100% {
+                            background-color: rgb(68, 25, 0);
+                        }
+                    }
+                    #cloud_1_phase2 {
+                        position: absolute;
+                        left: 0%;
+                        top: 5%;
+                        width: 12em;
+                        height: auto; 
+                        animation: back_forth_2_desk 2s infinite 0s ease forwards;
+                    }
+                    @keyframes back_forth_2_desk {
+                        50% {
+                            width: 12.5em;
+                        }
+                        100% {
+                            width: 12em;
+                        }
+                    }
+                    #cloud_2_phase2{
+                        position: absolute;
+                        left: 39%;
+                        top: 18%;
+                        width: 12em;
+                        height: auto; 
+                        animation: back_forth_2_desk 2s infinite 0s ease forwards;
+
+                    }
+                    #sun_phase2 {
+                        position: absolute;
+                        right: 5%;
+                        top: 7%;
+                        width: 6em;
+                        height: auto;
+                        z-index: -1;
+                        animation: zoom_transform_2_desk 2s ease infinite forwards;
+                    }
+                    @keyframes zoom_transform_2_desk {
+                        50% {
+                            width: 6.5em;
+                        }
+                        100% {
+                            width: 6em;
+                        }
+                    }
+                    #tree_1_phase2 {
+                        display: none;
+                        position: absolute;
+                        left: 1%;
+                        bottom: 10%;
+                        width: 7em;
+                        height: auto;
+                    }
+                    @keyframes tree_fall_2_desk {
+                        20% {
+                            transform: rotateZ(0deg);
+                        }
+                        100% {
+                            transform: rotateZ(-90deg);
+                        }
+                    }
+                    #tree_2_phase2 {
+                        position: absolute;
+                        left: 22%;
+                        bottom: 12%;
+                        width: 7em;
+                        height: auto;
+                        transform-origin: 50% 100%;
+                        animation: tree_fall_2_desk 5000ms linear 5000ms forwards;
+                    }
+                    #tree_3_phase2 {
+                        position: absolute;
+                        left: 47%;
+                        bottom: 13%;
+                        width: 7em;
+                        height: auto;
+                        transform-origin: 50% 100%;
+                        animation: tree_fall_2_desk 5000ms linear 5000ms forwards;
+                    }
+                    #tree_4_phase2 {
+                        display: none;
+                        position: absolute;
+                        left: 71%;
+                        bottom: 12%;
+                        width: 7em;
+                        height: auto; 
+                    }
+                    #tree_5_phase2 {
+                        display: none;
+                        position: absolute;
+                        left: 82%;
+                        bottom: 12%;
+                        width: 7em;
+                        height: auto; 
+                    }
+                    #tree_6_phase2 {
+                        position: absolute;
+                        left: 61%;
+                        bottom: 12%;
+                        width: 7em;
+                        height: auto; 
+                        transform-origin: 50% 100%;
+                        animation: tree_fall_2_desk 5000ms linear 5000ms forwards;
+                    }
+                    #tree_7_phase2 {
+                        position: absolute;
+                        left: 34%;
+                        bottom: 12%;
+                        width: 7em;
+                        height: auto;
+                        transform-origin: 50% 100%;
+                        animation: tree_fall_2_desk 5000ms linear 5000ms forwards;
+                    }
+                    #tree_8_phase2 {
+                        display: none;
+                        position: absolute;
+                        left: 11%;
+                        bottom: 12%;
+                        width: 7em;
+                        height: auto;
+                    }
+                    #polluted_cloud_1_phase2 {
+                        position: absolute;
+                        left: 20%;
+                        top: -2%;
+                        width: 12em;
+                        height: auto;
+                        animation: back_forth_2_desk 2s infinite 0s ease forwards;
+
+                    }
+                    #polluted_cloud_2_phase2 {
+                        position: absolute;
+                        left: 64%;
+                        top: 4%;
+                        width: 12em;
+                        height: auto;
+                        animation: back_forth_2_desk 2s infinite 0s ease forwards;
+
+                    }
+                    #chimney_1_phase2 {
+                        position: absolute;
+                        left: 0%;
+                        top: 45%;
+                        width: 16em;
+                        height: auto;
+                    }
+                    #chimney_2_phase2 {
+                        position: absolute;
+                        left: 8%;
+                        top: 45%;
+                        width: 16em;
+                        height: auto;
+                    }
+                    #building_1_phase2{
+                        position: absolute;
+                        left: 70%;
+                        bottom: 11%;
+                        width: 16em;
+                        height: auto;
+                    }
+                    #building_2_phase2{
+                        position: absolute;
+                        left: 85%;
+                        bottom: 6%;
+                        width: 16em;
+                        height: auto;
+                    }
+                
+            
+                #phase_3 {
+                    position: absolute;
+                    top: 0%;
+                    left: 0%;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgb(133, 255, 255);
+                    z-index: 2;
+                    animation: Phase_2 5000ms ease 9400ms forwards;
+                }
+                @keyframes Phase_3 {
+                    0%{
+                        opacity: 1;
+                    }
+                    90% {
+                        opacity: 1;
+                    }
+                    100% {
+                        opacity: 0;
+                    }
+                }
+            
+                    #phase_3_text {
+                        position: absolute;
+                        font-size: 2em;
+                        text-align: center;
+                        margin-top: 8em;
+                        z-index: 15;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background-color: rgba(255, 255, 255, 0.397);
+                    }
+                    #ground_phase3 {
+                        width: 200%;
+                        height: 10em;
+                        left: -45%;
+                        background-color: rgb(68, 25, 0);
+                        position: absolute;
+                        bottom: -15%;
+                        border-radius: 50%;
+                    }
+                    #sun_phase3 {
+                        position: absolute;
+                        right: 5%;
+                        top: 7%;
+                        width: 6em;
+                        height: auto;
+                        z-index: -1;
+                        animation: zoom_transform_3_desk 2s ease infinite forwards;
+                    }
+                    @keyframes zoom_transform_3_desk {
+                        50% {
+                            width: 6.5em;
+                        }
+                        100% {
+                            width: 6em;
+                        }
+                    }
+
+                    #polluted_cloud_1_phase3 {
+                        position: absolute;
+                        left: 1%;
+                        top: 4%;
+                        width: 12em;
+                        height: auto;
+                        animation: back_forth_3_desk 2s infinite 0s ease forwards;
+                    }
+                    @keyframes back_forth_3_desk {
+                        50% {
+                            width: 12.5em;
+                        }
+                        100% {
+                            width: 12em;
+                        }
+                    }
+                    #polluted_cloud_2_phase3 {
+                        position: absolute;
+                        left: 39%;
+                        top: 18%;
+                        width: 12em;
+                        height: auto;
+                        animation: back_forth_3_desk 2s infinite 0s ease forwards;
+
+                    }
+                    #polluted_cloud_3_phase3 {
+                        position: absolute;
+                        left: 21%;
+                        top: -4%;
+                        width: 12em;
+                        height: auto;
+                        animation: back_forth_3_desk 2s infinite 0s ease forwards;
+
+                    }
+                    #polluted_cloud_4_phase3 {
+                        position: absolute;
+                        left: 58%;
+                        top: 4%;
+                        width: 12em;
+                        height: auto;
+                        animation: back_forth_3_desk 2s infinite 0s ease forwards;
+
+                    }
+
+                    #chimney_1_phase3 {
+                        position: absolute;
+                        left: 0%;
+                        top: 45%;
+                        width: 16em;
+                        height: auto;
+                    }
+                    #chimney_2_phase3 {
+                        position: absolute;
+                        left: 8%;
+                        top: 45%;
+                        width: 16em;
+                        height: auto;
+                    }
+                    #chimney_3_phase3 {
+                        position: absolute;
+                        left: 14%;
+                        top: 49%;
+                        width: 16em;
+                        height: auto;
+                    }
+                    #chimney_4_phase3 {
+                        position: absolute;
+                        left: 21%;
+                        top: 45%;
+                        width: 16em;
+                        height: auto;
+                    }
+
+                    #building_1_phase3{
+                        position: absolute;
+                        left: 70%;
+                        bottom: 11%;
+                        width: 16em;
+                        height: auto;
+                    }
+                    #building_2_phase3{
+                        position: absolute;
+                        left: 85%;
+                        bottom: 6%;
+                        width: 16em;
+                        height: auto;
+                    }
+                    #building_3_phase3{
+                        position: absolute;
+                        left: 58%;
+                        bottom: -4%;
+                        width: 16em;
+                        height: auto;
+                    }
+                    #building_4_phase3{
+                        position: absolute;
+                        left: 76%;
+                        bottom: -5%;
+                        width: 16em;
+                        height: auto;
+                    }
+            #main_start {
+                background-image: url('Images/pool_table.png');
+                position: absolute;
+                text-align: center;
+                top: 0%;
+                left: 0%;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                color: #ddb901;
+                background-color: white;
+                justify-content: center;
+                align-items: center;
+                font-size: 3em;
+            }
+
+                    #section_1 {
+                        display: flex;
+                        flex-wrap: wrap;
+                        column-gap: 2vw;
+                        row-gap: 2vw;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 2em;
+                    }
+                        #image_1 {
+                            perspective: 500px;
+                            width: 15em;
+                            height: 15em;
+                            transform-style: preserve-3d;
+                            animation: big_and_small 10s ease 0s infinite forwards;
+                            color: yellow;
+                        }
+                            #image_1:hover {
+                                animation-play-state: paused;
+                            }
+                        #image_2 {
+                            perspective: 500px;
+                            width: 15em;
+                            height: 15em;
+                            transform-style: preserve-3d;
+                            animation: big_and_small 10s ease 0s infinite forwards;
+                            color: yellow;
+                        }
+                            #image_2:hover {
+                                animation-play-state: paused;
+                            }
+                        #image_3 {
+                            perspective: 500px;
+                            width: 15em;
+                            height: 15em;
+                            transform-style: preserve-3d;
+                            animation: big_and_small 10s ease 0s infinite forwards;
+                            color: yellow;
+                        }
+                            #image_3:hover {
+                                animation-play-state: paused;
+                            }
+                        @keyframes big_and_small {
+                            50% {
+                                transform: rotateY(180deg);
+                            }
+                        }
+                            #middle_container_1 {
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                background-image: url('https://images.unsplash.com/photo-1615325240547-4ab8f5c188c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80');
+                                background-size: 100% 100%;
+                                border-radius: 1em;
+                            }
+                            #middle_container_2 {
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                background-image: url('https://images.unsplash.com/photo-1619670710451-ee9d204dac26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+                                background-size: 100% 100%;
+                                border-radius: 1em;
+                            }
+                            #middle_container_3 {
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                background-image: url('https://images.unsplash.com/photo-1538309639218-3432f79e0894?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+                                background-size: 100% 100%;
+                                border-radius: 1em;
+                            }
+                            .front_container {
+                                position: absolute;
+                                width: 100%;
+                                height: 50%;
+                                text-align: center;
+                                padding: 1ch;
+                                top: 0%;
+                                transform: translateZ(3px);
+                                background: linear-gradient(180deg, black, rgba(0, 0, 0, 0.747) ,rgba(0, 0, 0, 0.582) , transparent);
+                                display: flex;
+                                justify-content: center;
+                                align-items: flex-start;
+                                border-radius: 1em;            
+                            }
+                            .back_container {
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                text-align: center;
+                                bottom: 0%;
+                                transform: translateZ(-3px) rotateY(180deg);
+                                background: linear-gradient(0deg, black, rgba(0, 0, 0, 0.747) ,rgba(0, 0, 0, 0.514));
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 1em;
+                    
+                            }
+                    
+                    
+                    
+                    #special_button {
+                        width: 16em;
+                        height: 5em;
+                        padding: 0.2em;
+                        color: white;
+                        font-size: 2em;
+                        background-color: darkslategrey;
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 2em auto;
+                        text-align: center;
+                    }
+                        #special_button:hover {
+                            background-image: url('https://images.unsplash.com/photo-1542378135-815e52392963?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80');
+                            background-size: 100% 100%;
+                            animation: zoom 2s ease infinite forwards;
+                            background-position: center;
+                        }
+                        @keyframes zoom {
+                            0% {
+                                background-size: 100% 100%; 
+                                }
+                            50% {
+                                background-size: 105% 105%; 
+                                }
+                            100% {
+                                background-size: 100% 100%;
+                                    }
+                        }
+                        #special_button:active {
+                            transform: scale(0.98);
+                            background-image: url('https://images.unsplash.com/photo-1542378135-815e52392963?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80');
+                            background-size: 100% 100%;
+                            animation: zoom 2s ease infinite forwards;
+                            background-position: center;
+                        }
+                
+        }
+
+
+        .highlight_text_red {
+            color: red;
+            font-size: 1.1em;
+        }
+        .highlight_text_green {
+            color: rgb(0, 189, 0);
+            font-size: 1.1em;
+        }
+        .highlight_text_orange {
+            color: orangered;
+            font-size: 1.1em;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div id="startup_container">
+        <div id="phase_1">
+            <div id="phase_1_text"><span class="highlight_text_green">Nature</span> was beautiful...</div>
+            <svg id="cloud_1" width="256" height="256" viewBox="0 0 67.733332 67.733335" version="1.1"><g   id="layer1"   transform="translate(0,-229.26665)"   style="fill:#ffffff">  <g     transform="translate(0.07615007,0.44225263)"     id="layer1-3"     style="fill:#ffffff">    <g       transform="rotate(-5.140186,26.613411,263.3189)"       id="g46"       style="fill:#ffffff">      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path10"         cx="10.29985"         cy="261.18674"         r="10.110864" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path12"         cx="25.513393"         cy="252.77676"         r="7.5595236" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path14"         cx="33.639885"         cy="256.93451"         r="10.394345" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path16"         cx="59.342262"         cy="269.02975"         r="7.9375" />      <ellipse         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path18"         cx="23.301155"         cy="265.72244"         rx="11.772882"         ry="7.2760415" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path20"         cx="54.712055"         cy="264.02155"         r="7.6540179" />      <ellipse         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path22"         cx="17.292412"         cy="258.96274"         rx="5.5751486"         ry="9.0207806" />      <ellipse         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path24"         cx="43.467258"         cy="269.88019"         rx="10.772322"         ry="5.3861609" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path26"         cx="45.262653"         cy="258.16293"         r="10.866816" />    </g>  </g></g></svg>                  
+            <svg id="cloud_2" width="256" height="256" viewBox="0 0 67.733332 67.733335" version="1.1"><g   id="layer1"   transform="translate(0,-229.26665)"   style="fill:#ffffff">  <g     transform="translate(0.07615007,0.44225263)"     id="layer1-3"     style="fill:#ffffff">    <g       transform="rotate(-5.140186,26.613411,263.3189)"       id="g46"       style="fill:#ffffff">      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path10"         cx="10.29985"         cy="261.18674"         r="10.110864" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path12"         cx="25.513393"         cy="252.77676"         r="7.5595236" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path14"         cx="33.639885"         cy="256.93451"         r="10.394345" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path16"         cx="59.342262"         cy="269.02975"         r="7.9375" />      <ellipse         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path18"         cx="23.301155"         cy="265.72244"         rx="11.772882"         ry="7.2760415" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path20"         cx="54.712055"         cy="264.02155"         r="7.6540179" />      <ellipse         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path22"         cx="17.292412"         cy="258.96274"         rx="5.5751486"         ry="9.0207806" />      <ellipse         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path24"         cx="43.467258"         cy="269.88019"         rx="10.772322"         ry="5.3861609" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path26"         cx="45.262653"         cy="258.16293"         r="10.866816" />    </g>  </g></g></svg>      
+            <svg id="cloud_3" width="256" height="256" viewBox="0 0 67.733332 67.733335" version="1.1"><g   id="layer1"   transform="translate(0,-229.26665)"   style="fill:#ffffff">  <g     transform="translate(0.07615007,0.44225263)"     id="layer1-3"     style="fill:#ffffff">    <g       transform="rotate(-5.140186,26.613411,263.3189)"       id="g46"       style="fill:#ffffff">      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path10"         cx="10.29985"         cy="261.18674"         r="10.110864" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path12"         cx="25.513393"         cy="252.77676"         r="7.5595236" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path14"         cx="33.639885"         cy="256.93451"         r="10.394345" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path16"         cx="59.342262"         cy="269.02975"         r="7.9375" />      <ellipse         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path18"         cx="23.301155"         cy="265.72244"         rx="11.772882"         ry="7.2760415" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path20"         cx="54.712055"         cy="264.02155"         r="7.6540179" />      <ellipse         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path22"         cx="17.292412"         cy="258.96274"         rx="5.5751486"         ry="9.0207806" />      <ellipse         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path24"         cx="43.467258"         cy="269.88019"         rx="10.772322"         ry="5.3861609" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path26"         cx="45.262653"         cy="258.16293"         r="10.866816" />    </g>  </g></g></svg>      
+            <svg id="cloud_4" width="256" height="256" viewBox="0 0 67.733332 67.733335" version="1.1"><g   id="layer1"   transform="translate(0,-229.26665)"   style="fill:#ffffff">  <g     transform="translate(0.07615007,0.44225263)"     id="layer1-3"     style="fill:#ffffff">    <g       transform="rotate(-5.140186,26.613411,263.3189)"       id="g46"       style="fill:#ffffff">      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path10"         cx="10.29985"         cy="261.18674"         r="10.110864" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path12"         cx="25.513393"         cy="252.77676"         r="7.5595236" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path14"         cx="33.639885"         cy="256.93451"         r="10.394345" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path16"         cx="59.342262"         cy="269.02975"         r="7.9375" />      <ellipse         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path18"         cx="23.301155"         cy="265.72244"         rx="11.772882"         ry="7.2760415" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path20"         cx="54.712055"         cy="264.02155"         r="7.6540179" />      <ellipse         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path22"         cx="17.292412"         cy="258.96274"         rx="5.5751486"         ry="9.0207806" />      <ellipse         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path24"         cx="43.467258"         cy="269.88019"         rx="10.772322"         ry="5.3861609" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path26"         cx="45.262653"         cy="258.16293"         r="10.866816" />    </g>  </g></g></svg>      
+            <svg id="sun" viewBox="0 0 33.866666 33.866668" width="128" height="128"><g   id="layer1"   transform="translate(0,-263.13332)">  <circle     style="opacity:1;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="path10"     cx="16.933332"     cy="280.06665"     r="16.933332" /></g></svg>
+            <svg id="tree_1" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <rect     style="opacity:1;fill:#502d16;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect12"     width="3.5907736"     height="28.537201"     x="29.671131"     y="268.65176"     ry="1.1339213" />  <path     style="opacity:1;fill:#005500;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"     id="path10"     d="m 39.687502,264.68302 -9.199081,1.51035 -8.948721,-2.61241 -4.279105,-8.28212 -0.280758,-9.31801 6.554448,-6.62899 8.775203,-3.14644 8.329977,4.18518 5.704132,7.37341 -1.40624,9.21557 z"     transform="matrix(1.7144071,0,0,1.6680257,-22.524861,-164.78383)" /></g></svg>
+            <svg id="tree_2" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <rect     style="opacity:1;fill:#502d16;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect12"     width="3.5907736"     height="28.537201"     x="29.671131"     y="268.65176"     ry="1.1339213" />  <path     style="opacity:1;fill:#005500;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"     id="path10"     d="m 39.687502,264.68302 -9.199081,1.51035 -8.948721,-2.61241 -4.279105,-8.28212 -0.280758,-9.31801 6.554448,-6.62899 8.775203,-3.14644 8.329977,4.18518 5.704132,7.37341 -1.40624,9.21557 z"     transform="matrix(1.7144071,0,0,1.6680257,-22.524861,-164.78383)" /></g></svg>
+            <svg id="tree_3" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <rect     style="opacity:1;fill:#502d16;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect12"     width="3.5907736"     height="28.537201"     x="29.671131"     y="268.65176"     ry="1.1339213" />  <path     style="opacity:1;fill:#005500;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"     id="path10"     d="m 39.687502,264.68302 -9.199081,1.51035 -8.948721,-2.61241 -4.279105,-8.28212 -0.280758,-9.31801 6.554448,-6.62899 8.775203,-3.14644 8.329977,4.18518 5.704132,7.37341 -1.40624,9.21557 z"     transform="matrix(1.7144071,0,0,1.6680257,-22.524861,-164.78383)" /></g></svg>
+            <svg id="tree_4" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <rect     style="opacity:1;fill:#502d16;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect12"     width="3.5907736"     height="28.537201"     x="29.671131"     y="268.65176"     ry="1.1339213" />  <path     style="opacity:1;fill:#005500;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"     id="path10"     d="m 39.687502,264.68302 -9.199081,1.51035 -8.948721,-2.61241 -4.279105,-8.28212 -0.280758,-9.31801 6.554448,-6.62899 8.775203,-3.14644 8.329977,4.18518 5.704132,7.37341 -1.40624,9.21557 z"     transform="matrix(1.7144071,0,0,1.6680257,-22.524861,-164.78383)" /></g></svg>
+            <svg id="tree_5" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <rect     style="opacity:1;fill:#502d16;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect12"     width="3.5907736"     height="28.537201"     x="29.671131"     y="268.65176"     ry="1.1339213" />  <path     style="opacity:1;fill:#005500;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"     id="path10"     d="m 39.687502,264.68302 -9.199081,1.51035 -8.948721,-2.61241 -4.279105,-8.28212 -0.280758,-9.31801 6.554448,-6.62899 8.775203,-3.14644 8.329977,4.18518 5.704132,7.37341 -1.40624,9.21557 z"     transform="matrix(1.7144071,0,0,1.6680257,-22.524861,-164.78383)" /></g></svg>
+            <svg id="tree_6" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <rect     style="opacity:1;fill:#502d16;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect12"     width="3.5907736"     height="28.537201"     x="29.671131"     y="268.65176"     ry="1.1339213" />  <path     style="opacity:1;fill:#005500;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"     id="path10"     d="m 39.687502,264.68302 -9.199081,1.51035 -8.948721,-2.61241 -4.279105,-8.28212 -0.280758,-9.31801 6.554448,-6.62899 8.775203,-3.14644 8.329977,4.18518 5.704132,7.37341 -1.40624,9.21557 z"     transform="matrix(1.7144071,0,0,1.6680257,-22.524861,-164.78383)" /></g></svg>
+            <svg id="tree_7" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <rect     style="opacity:1;fill:#502d16;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect12"     width="3.5907736"     height="28.537201"     x="29.671131"     y="268.65176"     ry="1.1339213" />  <path     style="opacity:1;fill:#005500;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"     id="path10"     d="m 39.687502,264.68302 -9.199081,1.51035 -8.948721,-2.61241 -4.279105,-8.28212 -0.280758,-9.31801 6.554448,-6.62899 8.775203,-3.14644 8.329977,4.18518 5.704132,7.37341 -1.40624,9.21557 z"     transform="matrix(1.7144071,0,0,1.6680257,-22.524861,-164.78383)" /></g></svg>
+            <svg id="tree_8" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <rect     style="opacity:1;fill:#502d16;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect12"     width="3.5907736"     height="28.537201"     x="29.671131"     y="268.65176"     ry="1.1339213" />  <path     style="opacity:1;fill:#005500;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"     id="path10"     d="m 39.687502,264.68302 -9.199081,1.51035 -8.948721,-2.61241 -4.279105,-8.28212 -0.280758,-9.31801 6.554448,-6.62899 8.775203,-3.14644 8.329977,4.18518 5.704132,7.37341 -1.40624,9.21557 z"     transform="matrix(1.7144071,0,0,1.6680257,-22.524861,-164.78383)" /></g></svg>
+
+            <div id="ground"></div>
+        </div>
+
+        <div id="phase_2">
+            <div id="phase_2_text">But then <span class="highlight_text_red">we</span> came...</div>
+            <svg id="polluted_cloud_1_phase2" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <g     transform="translate(0.07615007,0.44225263)"     id="layer1-3"     style="fill:#666666">    <g       transform="rotate(-5.140186,26.613411,263.3189)"       id="g46"       style="fill:#666666">      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path10"         cx="10.29985"         cy="261.18674"         r="10.110864" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path12"         cx="25.513393"         cy="252.77676"         r="7.5595236" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path14"         cx="33.639885"         cy="256.93451"         r="10.394345" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path16"         cx="59.342262"         cy="269.02975"         r="7.9375" />      <ellipse         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path18"         cx="23.301155"         cy="265.72244"         rx="11.772882"         ry="7.2760415" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path20"         cx="54.712055"         cy="264.02155"         r="7.6540179" />      <ellipse         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path22"         cx="17.292412"         cy="258.96274"         rx="5.5751486"         ry="9.0207806" />      <ellipse         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path24"         cx="43.467258"         cy="269.88019"         rx="10.772322"         ry="5.3861609" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path26"         cx="45.262653"         cy="258.16293"         r="10.866816" />    </g>  </g></g></svg>
+            <svg id="polluted_cloud_2_phase2" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <g     transform="translate(0.07615007,0.44225263)"     id="layer1-3"     style="fill:#666666">    <g       transform="rotate(-5.140186,26.613411,263.3189)"       id="g46"       style="fill:#666666">      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path10"         cx="10.29985"         cy="261.18674"         r="10.110864" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path12"         cx="25.513393"         cy="252.77676"         r="7.5595236" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path14"         cx="33.639885"         cy="256.93451"         r="10.394345" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path16"         cx="59.342262"         cy="269.02975"         r="7.9375" />      <ellipse         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path18"         cx="23.301155"         cy="265.72244"         rx="11.772882"         ry="7.2760415" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path20"         cx="54.712055"         cy="264.02155"         r="7.6540179" />      <ellipse         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path22"         cx="17.292412"         cy="258.96274"         rx="5.5751486"         ry="9.0207806" />      <ellipse         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path24"         cx="43.467258"         cy="269.88019"         rx="10.772322"         ry="5.3861609" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path26"         cx="45.262653"         cy="258.16293"         r="10.866816" />    </g>  </g></g></svg>
+            <svg id="cloud_1_phase2" width="256" height="256" viewBox="0 0 67.733332 67.733335" version="1.1"><g   id="layer1"   transform="translate(0,-229.26665)"   style="fill:#ffffff">  <g     transform="translate(0.07615007,0.44225263)"     id="layer1-3"     style="fill:#ffffff">    <g       transform="rotate(-5.140186,26.613411,263.3189)"       id="g46"       style="fill:#ffffff">      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path10"         cx="10.29985"         cy="261.18674"         r="10.110864" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path12"         cx="25.513393"         cy="252.77676"         r="7.5595236" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path14"         cx="33.639885"         cy="256.93451"         r="10.394345" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path16"         cx="59.342262"         cy="269.02975"         r="7.9375" />      <ellipse         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path18"         cx="23.301155"         cy="265.72244"         rx="11.772882"         ry="7.2760415" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path20"         cx="54.712055"         cy="264.02155"         r="7.6540179" />      <ellipse         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path22"         cx="17.292412"         cy="258.96274"         rx="5.5751486"         ry="9.0207806" />      <ellipse         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path24"         cx="43.467258"         cy="269.88019"         rx="10.772322"         ry="5.3861609" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path26"         cx="45.262653"         cy="258.16293"         r="10.866816" />    </g>  </g></g></svg>      
+            <svg id="cloud_2_phase2" width="256" height="256" viewBox="0 0 67.733332 67.733335" version="1.1"><g   id="layer1"   transform="translate(0,-229.26665)"   style="fill:#ffffff">  <g     transform="translate(0.07615007,0.44225263)"     id="layer1-3"     style="fill:#ffffff">    <g       transform="rotate(-5.140186,26.613411,263.3189)"       id="g46"       style="fill:#ffffff">      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path10"         cx="10.29985"         cy="261.18674"         r="10.110864" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path12"         cx="25.513393"         cy="252.77676"         r="7.5595236" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path14"         cx="33.639885"         cy="256.93451"         r="10.394345" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path16"         cx="59.342262"         cy="269.02975"         r="7.9375" />      <ellipse         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path18"         cx="23.301155"         cy="265.72244"         rx="11.772882"         ry="7.2760415" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path20"         cx="54.712055"         cy="264.02155"         r="7.6540179" />      <ellipse         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path22"         cx="17.292412"         cy="258.96274"         rx="5.5751486"         ry="9.0207806" />      <ellipse         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path24"         cx="43.467258"         cy="269.88019"         rx="10.772322"         ry="5.3861609" />      <circle         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path26"         cx="45.262653"         cy="258.16293"         r="10.866816" />    </g>  </g></g></svg>                 
+            <svg id="sun_phase2" viewBox="0 0 33.866666 33.866668" width="128" height="128"><g   id="layer1"   transform="translate(0,-263.13332)">  <circle     style="opacity:1;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="path10"     cx="16.933332"     cy="280.06665"     r="16.933332" /></g></svg>
+            <svg id="chimney_1_phase2" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <g     id="g72"     transform="matrix(1.54404,0,0,1.2601964,-13.736107,-77.159272)">    <g       transform="translate(-10.664054)"       id="g21">      <path         style="opacity:1;fill:#3e3748;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         d="m 27.214284,265.9587 4.960938,0.0945 c 0.229247,10.99997 0.655484,20.99291 4.960937,30.85231 H 19.560266 c 4.854954,-8.67274 5.353536,-20.02639 5.008185,-30.9468 z"         id="rect14" />      <ellipse         style="opacity:1;fill:#170b28;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path17"         cx="28.372841"         cy="266.02673"         rx="3.8059654"         ry="0.54279572" />    </g>    <circle       r="2.778125"       cy="262.27344"       cx="19.049999"       id="path45"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="3.4395833"       cy="251.22707"       cx="20.108332"       id="path47"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="4.1671872"       cy="249.04425"       cx="25.86302"       id="path49"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="4.6963539"       cy="256.71716"       cx="19.909897"       id="path51"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="6.0192709"       cy="255.12967"       cx="27.450521"       id="path53"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="6.1515622"       cy="249.30884"       cx="33.006771"       id="path55"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <ellipse       ry="2.5796874"       rx="1.5875"       cy="263.59634"       cx="18.388542"       id="path57"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="3.96875"       cy="260.22287"       cx="21.563541"       id="path59"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />  </g></g></svg>
+            <svg id="chimney_2_phase2" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <g     id="g72"     transform="matrix(1.54404,0,0,1.2601964,-13.736107,-77.159272)">    <g       transform="translate(-10.664054)"       id="g21">      <path         style="opacity:1;fill:#3e3748;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         d="m 27.214284,265.9587 4.960938,0.0945 c 0.229247,10.99997 0.655484,20.99291 4.960937,30.85231 H 19.560266 c 4.854954,-8.67274 5.353536,-20.02639 5.008185,-30.9468 z"         id="rect14" />      <ellipse         style="opacity:1;fill:#170b28;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path17"         cx="28.372841"         cy="266.02673"         rx="3.8059654"         ry="0.54279572" />    </g>    <circle       r="2.778125"       cy="262.27344"       cx="19.049999"       id="path45"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="3.4395833"       cy="251.22707"       cx="20.108332"       id="path47"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="4.1671872"       cy="249.04425"       cx="25.86302"       id="path49"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="4.6963539"       cy="256.71716"       cx="19.909897"       id="path51"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="6.0192709"       cy="255.12967"       cx="27.450521"       id="path53"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="6.1515622"       cy="249.30884"       cx="33.006771"       id="path55"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <ellipse       ry="2.5796874"       rx="1.5875"       cy="263.59634"       cx="18.388542"       id="path57"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="3.96875"       cy="260.22287"       cx="21.563541"       id="path59"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />  </g></g></svg>
+            <svg id="building_1_phase2" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <rect     style="opacity:1;fill:#666666;fill-opacity:1;stroke:#000000;stroke-width:0.2640692;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect10"     width="31.750515"     height="67.469261"     x="0.1320346"     y="229.39868"     ry="0" />  <rect     style="opacity:1;fill:#666666;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect12"     width="19.654762"     height="55.751484"     x="31.882549"     y="241.11646"     ry="0" />  <rect     style="opacity:1;fill:#55ddff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830"     width="12.722029"     height="12.722029"     x="9.9157"     y="236.94453" />  <rect     style="opacity:1;fill:#55ddff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830-3"     width="12.722029"     height="12.722029"     x="10.102789"     y="255.84047" />  <rect     style="opacity:1;fill:#2ad4ff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830-6"     width="12.722029"     height="12.722029"     x="10.289877"     y="274.73642" />  <rect     style="opacity:1;fill:#2ad4ff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830-7"     width="12.722029"     height="12.722029"     x="34.798492"     y="249.47946" />  <rect     style="opacity:1;fill:#2ad4ff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830-5"     width="12.722029"     height="12.722029"     x="34.985584"     y="273.05264" /></g></svg>            
+            <svg id="building_2_phase2" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <rect     style="opacity:1;fill:#666666;fill-opacity:1;stroke:#000000;stroke-width:0.2640692;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect10"     width="31.750515"     height="67.469261"     x="0.1320346"     y="229.39868"     ry="0" />  <rect     style="opacity:1;fill:#666666;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect12"     width="19.654762"     height="55.751484"     x="31.882549"     y="241.11646"     ry="0" />  <rect     style="opacity:1;fill:#55ddff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830"     width="12.722029"     height="12.722029"     x="9.9157"     y="236.94453" />  <rect     style="opacity:1;fill:#55ddff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830-3"     width="12.722029"     height="12.722029"     x="10.102789"     y="255.84047" />  <rect     style="opacity:1;fill:#2ad4ff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830-6"     width="12.722029"     height="12.722029"     x="10.289877"     y="274.73642" />  <rect     style="opacity:1;fill:#2ad4ff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830-7"     width="12.722029"     height="12.722029"     x="34.798492"     y="249.47946" />  <rect     style="opacity:1;fill:#2ad4ff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830-5"     width="12.722029"     height="12.722029"     x="34.985584"     y="273.05264" /></g></svg>            
+            <svg id="tree_1_phase2" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <rect     style="opacity:1;fill:#502d16;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect12"     width="3.5907736"     height="28.537201"     x="29.671131"     y="268.65176"     ry="1.1339213" />  <path     style="opacity:1;fill:#005500;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"     id="path10"     d="m 39.687502,264.68302 -9.199081,1.51035 -8.948721,-2.61241 -4.279105,-8.28212 -0.280758,-9.31801 6.554448,-6.62899 8.775203,-3.14644 8.329977,4.18518 5.704132,7.37341 -1.40624,9.21557 z"     transform="matrix(1.7144071,0,0,1.6680257,-22.524861,-164.78383)" /></g></svg>
+            <svg id="tree_2_phase2" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <rect     style="opacity:1;fill:#502d16;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect12"     width="3.5907736"     height="28.537201"     x="29.671131"     y="268.65176"     ry="1.1339213" />  <path     style="opacity:1;fill:#005500;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"     id="path10"     d="m 39.687502,264.68302 -9.199081,1.51035 -8.948721,-2.61241 -4.279105,-8.28212 -0.280758,-9.31801 6.554448,-6.62899 8.775203,-3.14644 8.329977,4.18518 5.704132,7.37341 -1.40624,9.21557 z"     transform="matrix(1.7144071,0,0,1.6680257,-22.524861,-164.78383)" /></g></svg>
+            <svg id="tree_3_phase2" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <rect     style="opacity:1;fill:#502d16;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect12"     width="3.5907736"     height="28.537201"     x="29.671131"     y="268.65176"     ry="1.1339213" />  <path     style="opacity:1;fill:#005500;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"     id="path10"     d="m 39.687502,264.68302 -9.199081,1.51035 -8.948721,-2.61241 -4.279105,-8.28212 -0.280758,-9.31801 6.554448,-6.62899 8.775203,-3.14644 8.329977,4.18518 5.704132,7.37341 -1.40624,9.21557 z"     transform="matrix(1.7144071,0,0,1.6680257,-22.524861,-164.78383)" /></g></svg>
+            <svg id="tree_4_phase2" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <rect     style="opacity:1;fill:#502d16;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect12"     width="3.5907736"     height="28.537201"     x="29.671131"     y="268.65176"     ry="1.1339213" />  <path     style="opacity:1;fill:#005500;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"     id="path10"     d="m 39.687502,264.68302 -9.199081,1.51035 -8.948721,-2.61241 -4.279105,-8.28212 -0.280758,-9.31801 6.554448,-6.62899 8.775203,-3.14644 8.329977,4.18518 5.704132,7.37341 -1.40624,9.21557 z"     transform="matrix(1.7144071,0,0,1.6680257,-22.524861,-164.78383)" /></g></svg>
+            <svg id="tree_5_phase2" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <rect     style="opacity:1;fill:#502d16;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect12"     width="3.5907736"     height="28.537201"     x="29.671131"     y="268.65176"     ry="1.1339213" />  <path     style="opacity:1;fill:#005500;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"     id="path10"     d="m 39.687502,264.68302 -9.199081,1.51035 -8.948721,-2.61241 -4.279105,-8.28212 -0.280758,-9.31801 6.554448,-6.62899 8.775203,-3.14644 8.329977,4.18518 5.704132,7.37341 -1.40624,9.21557 z"     transform="matrix(1.7144071,0,0,1.6680257,-22.524861,-164.78383)" /></g></svg>
+            <svg id="tree_6_phase2" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <rect     style="opacity:1;fill:#502d16;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect12"     width="3.5907736"     height="28.537201"     x="29.671131"     y="268.65176"     ry="1.1339213" />  <path     style="opacity:1;fill:#005500;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"     id="path10"     d="m 39.687502,264.68302 -9.199081,1.51035 -8.948721,-2.61241 -4.279105,-8.28212 -0.280758,-9.31801 6.554448,-6.62899 8.775203,-3.14644 8.329977,4.18518 5.704132,7.37341 -1.40624,9.21557 z"     transform="matrix(1.7144071,0,0,1.6680257,-22.524861,-164.78383)" /></g></svg>
+            <svg id="tree_7_phase2" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <rect     style="opacity:1;fill:#502d16;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect12"     width="3.5907736"     height="28.537201"     x="29.671131"     y="268.65176"     ry="1.1339213" />  <path     style="opacity:1;fill:#005500;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"     id="path10"     d="m 39.687502,264.68302 -9.199081,1.51035 -8.948721,-2.61241 -4.279105,-8.28212 -0.280758,-9.31801 6.554448,-6.62899 8.775203,-3.14644 8.329977,4.18518 5.704132,7.37341 -1.40624,9.21557 z"     transform="matrix(1.7144071,0,0,1.6680257,-22.524861,-164.78383)" /></g></svg>
+            <svg id="tree_8_phase2" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <rect     style="opacity:1;fill:#502d16;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect12"     width="3.5907736"     height="28.537201"     x="29.671131"     y="268.65176"     ry="1.1339213" />  <path     style="opacity:1;fill:#005500;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"     id="path10"     d="m 39.687502,264.68302 -9.199081,1.51035 -8.948721,-2.61241 -4.279105,-8.28212 -0.280758,-9.31801 6.554448,-6.62899 8.775203,-3.14644 8.329977,4.18518 5.704132,7.37341 -1.40624,9.21557 z"     transform="matrix(1.7144071,0,0,1.6680257,-22.524861,-164.78383)" /></g></svg>
+            <div id="ground_phase2"></div>
+        </div>
+
+        <div id="phase_3">
+            <div id="phase_2_text">And <span class="highlight_text_orange">Destroyed</span> it...</div>
+            <svg id="polluted_cloud_1_phase3" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <g     transform="translate(0.07615007,0.44225263)"     id="layer1-3"     style="fill:#666666">    <g       transform="rotate(-5.140186,26.613411,263.3189)"       id="g46"       style="fill:#666666">      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path10"         cx="10.29985"         cy="261.18674"         r="10.110864" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path12"         cx="25.513393"         cy="252.77676"         r="7.5595236" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path14"         cx="33.639885"         cy="256.93451"         r="10.394345" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path16"         cx="59.342262"         cy="269.02975"         r="7.9375" />      <ellipse         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path18"         cx="23.301155"         cy="265.72244"         rx="11.772882"         ry="7.2760415" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path20"         cx="54.712055"         cy="264.02155"         r="7.6540179" />      <ellipse         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path22"         cx="17.292412"         cy="258.96274"         rx="5.5751486"         ry="9.0207806" />      <ellipse         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path24"         cx="43.467258"         cy="269.88019"         rx="10.772322"         ry="5.3861609" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path26"         cx="45.262653"         cy="258.16293"         r="10.866816" />    </g>  </g></g></svg>
+            <svg id="polluted_cloud_2_phase3" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <g     transform="translate(0.07615007,0.44225263)"     id="layer1-3"     style="fill:#666666">    <g       transform="rotate(-5.140186,26.613411,263.3189)"       id="g46"       style="fill:#666666">      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path10"         cx="10.29985"         cy="261.18674"         r="10.110864" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path12"         cx="25.513393"         cy="252.77676"         r="7.5595236" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path14"         cx="33.639885"         cy="256.93451"         r="10.394345" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path16"         cx="59.342262"         cy="269.02975"         r="7.9375" />      <ellipse         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path18"         cx="23.301155"         cy="265.72244"         rx="11.772882"         ry="7.2760415" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path20"         cx="54.712055"         cy="264.02155"         r="7.6540179" />      <ellipse         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path22"         cx="17.292412"         cy="258.96274"         rx="5.5751486"         ry="9.0207806" />      <ellipse         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path24"         cx="43.467258"         cy="269.88019"         rx="10.772322"         ry="5.3861609" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path26"         cx="45.262653"         cy="258.16293"         r="10.866816" />    </g>  </g></g></svg>
+            <svg id="polluted_cloud_3_phase3" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <g     transform="translate(0.07615007,0.44225263)"     id="layer1-3"     style="fill:#666666">    <g       transform="rotate(-5.140186,26.613411,263.3189)"       id="g46"       style="fill:#666666">      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path10"         cx="10.29985"         cy="261.18674"         r="10.110864" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path12"         cx="25.513393"         cy="252.77676"         r="7.5595236" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path14"         cx="33.639885"         cy="256.93451"         r="10.394345" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path16"         cx="59.342262"         cy="269.02975"         r="7.9375" />      <ellipse         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path18"         cx="23.301155"         cy="265.72244"         rx="11.772882"         ry="7.2760415" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path20"         cx="54.712055"         cy="264.02155"         r="7.6540179" />      <ellipse         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path22"         cx="17.292412"         cy="258.96274"         rx="5.5751486"         ry="9.0207806" />      <ellipse         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path24"         cx="43.467258"         cy="269.88019"         rx="10.772322"         ry="5.3861609" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path26"         cx="45.262653"         cy="258.16293"         r="10.866816" />    </g>  </g></g></svg>
+            <svg id="polluted_cloud_4_phase3" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <g     transform="translate(0.07615007,0.44225263)"     id="layer1-3"     style="fill:#666666">    <g       transform="rotate(-5.140186,26.613411,263.3189)"       id="g46"       style="fill:#666666">      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path10"         cx="10.29985"         cy="261.18674"         r="10.110864" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path12"         cx="25.513393"         cy="252.77676"         r="7.5595236" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path14"         cx="33.639885"         cy="256.93451"         r="10.394345" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path16"         cx="59.342262"         cy="269.02975"         r="7.9375" />      <ellipse         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path18"         cx="23.301155"         cy="265.72244"         rx="11.772882"         ry="7.2760415" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path20"         cx="54.712055"         cy="264.02155"         r="7.6540179" />      <ellipse         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path22"         cx="17.292412"         cy="258.96274"         rx="5.5751486"         ry="9.0207806" />      <ellipse         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path24"         cx="43.467258"         cy="269.88019"         rx="10.772322"         ry="5.3861609" />      <circle         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path26"         cx="45.262653"         cy="258.16293"         r="10.866816" />    </g>  </g></g></svg>
+            <svg id="sun_phase3" viewBox="0 0 33.866666 33.866668" width="128" height="128"><g   id="layer1"   transform="translate(0,-263.13332)">  <circle     style="opacity:1;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="path10"     cx="16.933332"     cy="280.06665"     r="16.933332" /></g></svg>
+            <svg id="chimney_1_phase3" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <g     id="g72"     transform="matrix(1.54404,0,0,1.2601964,-13.736107,-77.159272)">    <g       transform="translate(-10.664054)"       id="g21">      <path         style="opacity:1;fill:#3e3748;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         d="m 27.214284,265.9587 4.960938,0.0945 c 0.229247,10.99997 0.655484,20.99291 4.960937,30.85231 H 19.560266 c 4.854954,-8.67274 5.353536,-20.02639 5.008185,-30.9468 z"         id="rect14" />      <ellipse         style="opacity:1;fill:#170b28;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path17"         cx="28.372841"         cy="266.02673"         rx="3.8059654"         ry="0.54279572" />    </g>    <circle       r="2.778125"       cy="262.27344"       cx="19.049999"       id="path45"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="3.4395833"       cy="251.22707"       cx="20.108332"       id="path47"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="4.1671872"       cy="249.04425"       cx="25.86302"       id="path49"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="4.6963539"       cy="256.71716"       cx="19.909897"       id="path51"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="6.0192709"       cy="255.12967"       cx="27.450521"       id="path53"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="6.1515622"       cy="249.30884"       cx="33.006771"       id="path55"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <ellipse       ry="2.5796874"       rx="1.5875"       cy="263.59634"       cx="18.388542"       id="path57"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="3.96875"       cy="260.22287"       cx="21.563541"       id="path59"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />  </g></g></svg>
+            <svg id="chimney_2_phase3" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <g     id="g72"     transform="matrix(1.54404,0,0,1.2601964,-13.736107,-77.159272)">    <g       transform="translate(-10.664054)"       id="g21">      <path         style="opacity:1;fill:#3e3748;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         d="m 27.214284,265.9587 4.960938,0.0945 c 0.229247,10.99997 0.655484,20.99291 4.960937,30.85231 H 19.560266 c 4.854954,-8.67274 5.353536,-20.02639 5.008185,-30.9468 z"         id="rect14" />      <ellipse         style="opacity:1;fill:#170b28;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path17"         cx="28.372841"         cy="266.02673"         rx="3.8059654"         ry="0.54279572" />    </g>    <circle       r="2.778125"       cy="262.27344"       cx="19.049999"       id="path45"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="3.4395833"       cy="251.22707"       cx="20.108332"       id="path47"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="4.1671872"       cy="249.04425"       cx="25.86302"       id="path49"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="4.6963539"       cy="256.71716"       cx="19.909897"       id="path51"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="6.0192709"       cy="255.12967"       cx="27.450521"       id="path53"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="6.1515622"       cy="249.30884"       cx="33.006771"       id="path55"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <ellipse       ry="2.5796874"       rx="1.5875"       cy="263.59634"       cx="18.388542"       id="path57"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="3.96875"       cy="260.22287"       cx="21.563541"       id="path59"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />  </g></g></svg>
+            <svg id="chimney_3_phase3" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <g     id="g72"     transform="matrix(1.54404,0,0,1.2601964,-13.736107,-77.159272)">    <g       transform="translate(-10.664054)"       id="g21">      <path         style="opacity:1;fill:#3e3748;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         d="m 27.214284,265.9587 4.960938,0.0945 c 0.229247,10.99997 0.655484,20.99291 4.960937,30.85231 H 19.560266 c 4.854954,-8.67274 5.353536,-20.02639 5.008185,-30.9468 z"         id="rect14" />      <ellipse         style="opacity:1;fill:#170b28;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path17"         cx="28.372841"         cy="266.02673"         rx="3.8059654"         ry="0.54279572" />    </g>    <circle       r="2.778125"       cy="262.27344"       cx="19.049999"       id="path45"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="3.4395833"       cy="251.22707"       cx="20.108332"       id="path47"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="4.1671872"       cy="249.04425"       cx="25.86302"       id="path49"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="4.6963539"       cy="256.71716"       cx="19.909897"       id="path51"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="6.0192709"       cy="255.12967"       cx="27.450521"       id="path53"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="6.1515622"       cy="249.30884"       cx="33.006771"       id="path55"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <ellipse       ry="2.5796874"       rx="1.5875"       cy="263.59634"       cx="18.388542"       id="path57"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="3.96875"       cy="260.22287"       cx="21.563541"       id="path59"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />  </g></g></svg>
+            <svg id="chimney_4_phase3" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <g     id="g72"     transform="matrix(1.54404,0,0,1.2601964,-13.736107,-77.159272)">    <g       transform="translate(-10.664054)"       id="g21">      <path         style="opacity:1;fill:#3e3748;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         d="m 27.214284,265.9587 4.960938,0.0945 c 0.229247,10.99997 0.655484,20.99291 4.960937,30.85231 H 19.560266 c 4.854954,-8.67274 5.353536,-20.02639 5.008185,-30.9468 z"         id="rect14" />      <ellipse         style="opacity:1;fill:#170b28;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"         id="path17"         cx="28.372841"         cy="266.02673"         rx="3.8059654"         ry="0.54279572" />    </g>    <circle       r="2.778125"       cy="262.27344"       cx="19.049999"       id="path45"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="3.4395833"       cy="251.22707"       cx="20.108332"       id="path47"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="4.1671872"       cy="249.04425"       cx="25.86302"       id="path49"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="4.6963539"       cy="256.71716"       cx="19.909897"       id="path51"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="6.0192709"       cy="255.12967"       cx="27.450521"       id="path53"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="6.1515622"       cy="249.30884"       cx="33.006771"       id="path55"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <ellipse       ry="2.5796874"       rx="1.5875"       cy="263.59634"       cx="18.388542"       id="path57"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />    <circle       r="3.96875"       cy="260.22287"       cx="21.563541"       id="path59"       style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />  </g></g></svg>
+            <svg id="building_1_phase3" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <rect     style="opacity:1;fill:#666666;fill-opacity:1;stroke:#000000;stroke-width:0.2640692;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect10"     width="31.750515"     height="67.469261"     x="0.1320346"     y="229.39868"     ry="0" />  <rect     style="opacity:1;fill:#666666;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect12"     width="19.654762"     height="55.751484"     x="31.882549"     y="241.11646"     ry="0" />  <rect     style="opacity:1;fill:#55ddff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830"     width="12.722029"     height="12.722029"     x="9.9157"     y="236.94453" />  <rect     style="opacity:1;fill:#55ddff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830-3"     width="12.722029"     height="12.722029"     x="10.102789"     y="255.84047" />  <rect     style="opacity:1;fill:#2ad4ff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830-6"     width="12.722029"     height="12.722029"     x="10.289877"     y="274.73642" />  <rect     style="opacity:1;fill:#2ad4ff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830-7"     width="12.722029"     height="12.722029"     x="34.798492"     y="249.47946" />  <rect     style="opacity:1;fill:#2ad4ff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830-5"     width="12.722029"     height="12.722029"     x="34.985584"     y="273.05264" /></g></svg>            
+            <svg id="building_2_phase3" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <rect     style="opacity:1;fill:#666666;fill-opacity:1;stroke:#000000;stroke-width:0.2640692;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect10"     width="31.750515"     height="67.469261"     x="0.1320346"     y="229.39868"     ry="0" />  <rect     style="opacity:1;fill:#666666;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect12"     width="19.654762"     height="55.751484"     x="31.882549"     y="241.11646"     ry="0" />  <rect     style="opacity:1;fill:#55ddff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830"     width="12.722029"     height="12.722029"     x="9.9157"     y="236.94453" />  <rect     style="opacity:1;fill:#55ddff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830-3"     width="12.722029"     height="12.722029"     x="10.102789"     y="255.84047" />  <rect     style="opacity:1;fill:#2ad4ff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830-6"     width="12.722029"     height="12.722029"     x="10.289877"     y="274.73642" />  <rect     style="opacity:1;fill:#2ad4ff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830-7"     width="12.722029"     height="12.722029"     x="34.798492"     y="249.47946" />  <rect     style="opacity:1;fill:#2ad4ff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830-5"     width="12.722029"     height="12.722029"     x="34.985584"     y="273.05264" /></g></svg>            
+            <svg id="building_3_phase3" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <rect     style="opacity:1;fill:#666666;fill-opacity:1;stroke:#000000;stroke-width:0.2640692;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect10"     width="31.750515"     height="67.469261"     x="0.1320346"     y="229.39868"     ry="0" />  <rect     style="opacity:1;fill:#666666;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect12"     width="19.654762"     height="55.751484"     x="31.882549"     y="241.11646"     ry="0" />  <rect     style="opacity:1;fill:#55ddff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830"     width="12.722029"     height="12.722029"     x="9.9157"     y="236.94453" />  <rect     style="opacity:1;fill:#55ddff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830-3"     width="12.722029"     height="12.722029"     x="10.102789"     y="255.84047" />  <rect     style="opacity:1;fill:#2ad4ff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830-6"     width="12.722029"     height="12.722029"     x="10.289877"     y="274.73642" />  <rect     style="opacity:1;fill:#2ad4ff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830-7"     width="12.722029"     height="12.722029"     x="34.798492"     y="249.47946" />  <rect     style="opacity:1;fill:#2ad4ff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830-5"     width="12.722029"     height="12.722029"     x="34.985584"     y="273.05264" /></g></svg>                                    
+            <svg id="building_4_phase3" width="256" height="256" viewBox="0 0 67.733332 67.733335"><g   id="layer1"   transform="translate(0,-229.26665)">  <rect     style="opacity:1;fill:#666666;fill-opacity:1;stroke:#000000;stroke-width:0.2640692;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect10"     width="31.750515"     height="67.469261"     x="0.1320346"     y="229.39868"     ry="0" />  <rect     style="opacity:1;fill:#666666;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect12"     width="19.654762"     height="55.751484"     x="31.882549"     y="241.11646"     ry="0" />  <rect     style="opacity:1;fill:#55ddff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830"     width="12.722029"     height="12.722029"     x="9.9157"     y="236.94453" />  <rect     style="opacity:1;fill:#55ddff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830-3"     width="12.722029"     height="12.722029"     x="10.102789"     y="255.84047" />  <rect     style="opacity:1;fill:#2ad4ff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830-6"     width="12.722029"     height="12.722029"     x="10.289877"     y="274.73642" />  <rect     style="opacity:1;fill:#2ad4ff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830-7"     width="12.722029"     height="12.722029"     x="34.798492"     y="249.47946" />  <rect     style="opacity:1;fill:#2ad4ff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"     id="rect830-5"     width="12.722029"     height="12.722029"     x="34.985584"     y="273.05264" /></g></svg>                        
+            <div id="ground_phase3"></div>
+        </div>
+
+        <div id="main_start">
+            Clean Energy is the Need of the Hour
+        </div>
+    </div>
+    
+
+    <div id="section_1">
+        <div id="image_1">
+            <div id="middle_container_1">
+            </div>
+            <div class="front_container">What is Clean Energy?</div>
+            <div class="back_container">An energy that comes from natural resources and processes that are constantly replenished.</div>
+        </div>
+
+        <div id="image_2">
+            <div id="middle_container_2">
+            </div>
+            <div class="front_container">Sources of Clean Energy.</div>
+            <div class="back_container">
+                <ol>
+                    <li style="text-align: left;">Solar Energy</li>
+                    <li style="text-align: left;">Wind Energy</li>
+                    <li style="text-align: left;">Bio-energy</li>
+                    <li style="text-align: left;">Hydro-Power Energy</li>
+                    <li style="text-align: left;">Geothermal Energy</li>
+                </ol>
+            </div>
+        </div>
+
+        <div id="image_3">
+            <div id="middle_container_3">
+            </div>
+            <div class="front_container">Need for Clean Energy.</div>
+            <div class="back_container">
+                <ol>
+                    <li style="text-align: left;">Reduce Fossil fuels</li>
+                    <li style="text-align: left;">Reduce Greenhouse gas</li>
+                    <li style="text-align: left;">Preserve the environment</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div id="section_2">
+        <div id="special_button" onclick="alert('Congratulations on starting a new Journey!!!')">
+            Start Your Clean Energy Journey
+        </div>
+    </div>
+</body>
+</html>
